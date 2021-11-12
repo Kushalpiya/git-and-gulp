@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.features .container {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.features .container .second__question .top__header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.features .container .second__question .top__header h2 {
+    color: #e60607;
+    padding: 10px 0px 20px 0px;
+    font-size: 2.5rem;
+}
+
+.features .container .second__question .top__header p {
+    color: #626263;
+    margin-left: 390px;
+    width: 700px;
+}
+
+.features .container .second__question .upper__card {
+    display: flex;
+}
+
+.features .container .second__question .upper__card .left__section {
+    margin: 40px 0px 40px 350px;
+    width: 30%;
+}
+
+.features .container .second__question .upper__card .left__section h3 {
+    font-size: 30px;
+}
+
+.features .container .second__question .upper__card .left__section p {
+    margin-bottom: 30px;
+}
+
+.features .container .second__question .upper__card .left__section button {
+    font-size: 15px;
+    padding: 10px 30px;
+    background-color: #e60607;
+    color: #fffcfc;
+    border: none;
+    font-weight: 600;
+}
+
+.features .container .second__question .upper__card .right__section {
+    width: 50%;
+}
+
+.features .container .second__question .upper__card .right__section img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: solid 15px #f8dbda;
+}
+
+.features .container .second__question .lower__card {
+    display: flex;
+}
+
+.features .container .second__question .lower__card .right__section h3 {
+    font-size: 30px;
+}
+
+.features .container .second__question .lower__card .right__section {
+    margin: 40px 0px 0px 1px;
+    width: 30%;
+}
+
+.features .container .second__question .lower__card .right__section p {
+    margin-bottom: 30px;
+}
+
+.features .container .second__question .lower__card .right__section button {
+    font-size: 15px;
+    padding: 10px 30px;
+    background-color: #e60607;
+    color: #fffcfc;
+    border: none;
+    font-weight: 600;
+}
+
+.features .container .second__question .lower__card .left__section {
+    width: 50%;
+}
+
+.features .container .second__question .lower__card .left__section {
+    margin-left: 350px;
+    width: 30%;
+}
+
+.features .container .second__question .lower__card .left__section img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: solid 15px #f8dbda;
+}

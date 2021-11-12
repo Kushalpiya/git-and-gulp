@@ -1,0 +1,143 @@
+.pseudo-elements h2 {
+    font-family: sans-serif;
+    margin: 100px auto;
+    text-align: center;
+    font-size: 30px;
+    max-width: 600px;
+    position: relative;
+}
+
+.pseudo-elements h2:before {
+    content: "";
+    width: 150px;
+    height: 5px;
+    background: grey;
+    top: 50%;
+    position: absolute;
+    left: 0;
+}
+
+.pseudo-elements h2:after {
+    content: "";
+    width: 150px;
+    height: 5px;
+    background: grey;
+    top: 50%;
+    position: absolute;
+    right: 0;
+}
+
+.media-parent {
+    width: 100%;
+    display: flex;
+}
+
+@media (max-width: 480px) {
+    .media-parent {
+        display: block;
+    }
+}
+
+.media-parent .child {
+    width: 60%;
+    padding: 0 80px 0 10px;
+}
+
+@media (max-width: 480px) {
+    .media-parent .child {
+        width: 100%;
+    }
+}
+
+.media-parent .child .excepteur-link {
+    color: red;
+    text-decoration: none;
+}
+
+.media-parent .child .travel-link {
+    text-decoration: none;
+    font-weight: 700;
+    color: #000;
+}
+
+.media-parent .notes-child {
+    width: 40%;
+    padding-left: 10px;
+}
+
+@media (max-width: 480px) {
+    .media-parent .notes-child {
+        width: 100%;
+    }
+}
+
+.media-parent .notes-child p {
+    color: red;
+}
+
+.body {
+    background-color: #ebebff;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    width: 600px;
+    margin: 50px 0 0 50px;
+    height: 720px;
+}
+
+.body h1 {
+    color: #cd5c5c;
+    font-size: 50px;
+    margin: 10px;
+    font-weight: 10;
+}
+
+.body .blocks {
+    display: grid;
+    grid-template-columns: 280px 280px;
+    grid-gap: 20px 20px;
+    margin-left: 10px;
+}
+
+.body .blocks .child-block {
+    background-color: #ffff;
+    padding: 10px;
+}
+
+.body .blocks .child-block h2 {
+    color: #3a3a3a;
+}
+
+.body .blocks .child-block p {
+    color: #858585;
+}
+
+.body .blocks .child-block .css-img {
+    margin-left: 28px;
+}
+
+.body .blocks .title-four {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.body .blocks .blue-button,
+.body .blocks .green-button {
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px 0 0 25px;
+}
+
+.body .blocks .green-button {
+    background-color: #03bb2c;
+}
+
+.body .blocks .blue-button {
+    background-color: #0316bb;
+}

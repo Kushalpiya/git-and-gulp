@@ -1,0 +1,140 @@
+.main {
+    font-family: Arial, Helvetica, sans-serif;
+    h4 {
+        margin-left: 15px;
+    }
+    .first-part {
+        .cards {
+            display: grid;
+            grid-template-columns: 400px 400px 400px;
+            grid-gap: 20px 20px;
+            font-size: 1.3rem;
+            margin-left: 15px;
+            color: #10126e;
+            text-transform: uppercase;
+            .cards-block {
+                text-align: center;
+                height: 150px;
+                padding: 30px;
+                background-color: #c0e0fe;
+                grid-column-start: 1;
+                grid-column-end: 3;
+                color: #141475;
+            }
+            .card-one {
+                text-align: center;
+                height: 150px;
+                padding: 30px;
+                background-color: #eec1fe;
+            }
+            .card-two {
+                text-align: center;
+                height: 150px;
+                padding: 30px;
+                background-color: #ffd0c0;
+            }
+            .card-three {
+                text-align: center;
+                height: 150px;
+                padding: 30px;
+                background-color: #d4fe8e;
+            }
+            .card-four {
+                text-align: center;
+                height: 150px;
+                padding: 30px;
+                background-color: #c0e0fe;
+            }
+        }
+    }
+    .cards {
+        .card-one {
+            color: #870103;
+        }
+        .card-two {
+            color: #47a88a;
+        }
+        .card-three {
+            color: #47a88a;
+        }
+        .card-four {
+            color: #47a88a;
+        }
+    }
+    .btn {
+        display: grid;
+        font-weight: bold;
+        margin: 10px;
+        padding: 14px 0;
+        border: none;
+        border-radius: 20px;
+        text-transform: uppercase;
+        .btn--small {
+            width: 160px;
+            background-color: black;
+            color: white;
+        }
+        .btn--medium {
+            width: 240px;
+            background-color: #01b9e1;
+            color: white;
+        }
+        .btn--large {
+            background-color: lightgrey;
+            width: 280px;
+            color: black;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .cards {
+        grid-template-columns: 350px 350px;
+        grid-gap: 15px 15px;
+        margin-left: 10px;
+    }
+    .btn--small {
+        width: 120px;
+    }
+    .btn--medium {
+        width: 200px;
+    }
+    .btn--large {
+        width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
+    .cards-block {
+        width: 280px;
+    }
+    .card-one {
+        width: 250px;
+        margin-left: 15px;
+    }
+    .card-two {
+        width: 250px;
+        margin-left: 15px;
+    }
+    .card-three {
+        width: 250px;
+        margin-left: 15px;
+    }
+    .card-four {
+        width: 250px;
+        margin-left: 15px;
+    }
+    .btn--small {
+        width: 310px;
+    }
+    .btn--medium {
+        width: 310px;
+    }
+    .btn--large {
+        width: 310px;
+    }
+}

@@ -1,0 +1,128 @@
+.pseudo-elements {
+    h2 {
+        font-family: sans-serif;
+        margin: 100px auto;
+        text-align: center;
+        font-size: 30px;
+        max-width: 600px;
+        position: relative;
+        &:before {
+            content: "";
+            width: 150px;
+            height: 5px;
+            background: grey;
+            top: 50%;
+            position: absolute;
+            left: 0;
+        }
+        &:after {
+            content: "";
+            width: 150px;
+            height: 5px;
+            background: grey;
+            top: 50%;
+            position: absolute;
+            right: 0;
+        }
+    }
+}
+
+.media-parent {
+    width: 100%;
+    display: flex;
+    .child {
+        width: 60%;
+        padding: 0 80px 0 10px;
+        .excepteur-link {
+            color: red;
+            text-decoration: none;
+        }
+        .travel-link {
+            text-decoration: none;
+            font-weight: 700;
+            color: #000;
+        }
+    }
+    .notes-child {
+        width: 40%;
+        padding-left: 10px;
+        p {
+            color: red;
+        }
+    }
+}
+
+.body {
+    background-color: #ebebff;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    width: 600px;
+    margin: 50px 0 0 50px;
+    height: 720px;
+    h1 {
+        color: #cd5c5c;
+        font-size: 50px;
+        margin: 10px;
+        font-weight: 10;
+    }
+    .blocks {
+        display: grid;
+        grid-template-columns: 280px 280px;
+        grid-gap: 20px 20px;
+        margin-left: 10px;
+        .child-block {
+            background-color: #ffff;
+            padding: 10px;
+            h2 {
+                color: #3a3a3a;
+            }
+            p {
+                color: #858585;
+            }
+            .css-img {
+                margin-left: 28px;
+            }
+        }
+        .title-four {
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+        .blue-button {
+            width: 200px;
+            height: 50px;
+            border: none;
+            border-radius: 10px;
+            color: #fff;
+            font-weight: 700;
+            font-size: 20px;
+            cursor: pointer;
+            margin: 10px 0 0 25px;
+            background-color: #0316bb;
+        }
+        .green-button {
+            width: 200px;
+            height: 50px;
+            border: none;
+            border-radius: 10px;
+            color: #fff;
+            font-weight: 700;
+            font-size: 20px;
+            cursor: pointer;
+            margin: 10px 0 0 25px;
+            background-color: #03bb2c;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .media-parent {
+        display: block;
+        .child {
+            width: 100%;
+        }
+        .notes-child {
+            width: 100%;
+        }
+    }
+}

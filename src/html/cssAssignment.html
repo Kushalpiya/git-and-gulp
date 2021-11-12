@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+<style>
+    .vegetables ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .vegetables ul li {
+        background-color: #4d7298;
+        border: 2px solid #77a686;
+        padding: 18px;
+        font-size: 25px;
+        border-radius: 13px;
+        margin: 0 10px 10px 0;
+        color: #fff;
+    }
+    
+    .css {
+        font-weight: bolder;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .css h1 {
+        font-family: sans-serif;
+        margin: 100px auto;
+        text-align: center;
+        font-size: 30px;
+        max-width: 1400px;
+        position: relative;
+    }
+    
+    .css h1::before {
+        position: absolute;
+        background-color: grey;
+        content: "";
+        height: 5px;
+        width: 560px;
+        left: 0;
+        top: 50%;
+    }
+    
+    .css h1::after {
+        position: absolute;
+        background-color: grey;
+        content: "";
+        height: 5px;
+        width: 560px;
+        right: 0;
+        top: 50%;
+    }
+    
+    .responsive {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        margin: 0 50px;
+    }
+    
+    .responsive a {
+        text-decoration: none;
+    }
+    
+    .responsive .parent {
+        display: flex;
+    }
+    
+    .responsive .parent:first-child p:first-child a {
+        color: orange;
+    }
+    
+    .responsive .parent:first-child p:nth-child(2) a {
+        font-weight: bold;
+        color: black;
+    }
+    
+    .responsive .parent .child:nth-child(2) {
+        margin-left: 150px;
+        color: orange;
+        width: 100%;
+    }
+    
+    .title {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    
+    .form {
+        background-image: linear-gradient(#b125ff, #10a5e7);
+        margin: 0 250px;
+    }
+    
+    .form .title {
+        background-color: black;
+        color: white;
+        margin: 0;
+        padding-top: 1px;
+        height: 50px;
+        border-radius: 10px 10px 0 0;
+        text-align: center;
+    }
+    
+    .insideform {
+        padding: 9px;
+    }
+    
+    form {
+        padding: 50px 0 50px 75px;
+        background-color: white;
+        font-family: cursive;
+    }
+    
+    form label {
+        color: rgb(70, 69, 69);
+        font-weight: 700;
+    }
+    
+    form input,
+    select {
+        border: 2px solid rgb(231, 231, 231);
+        border-radius: 5px;
+        height: 30px;
+        background-color: rgb(231, 231, 231);
+    }
+    
+    select {
+        height: 40px;
+    }
+    
+    .forms tr td {
+        padding-bottom: 30px;
+    }
+    
+    #customer {
+        padding-bottom: 0;
+    }
+    
+    #area {
+        width: 80px;
+    }
+    
+    #radio {
+        padding-bottom: 20px;
+        display: flex;
+        align-items: center;
+    }
+    
+    #radio label {
+        margin-right: 30px;
+    }
+    
+    #button {
+        background-color: #fd4c5a;
+        border: none;
+        padding: 14px 35px;
+        border-radius: 5px;
+        color: white;
+        text-transform: uppercase;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        cursor: pointer;
+    }
+    
+    #companyInput,
+    #emailInput {
+        width: 337px;
+    }
+    
+    #phoneInput {
+        width: 242px;
+    }
+    
+    select {
+        width: 342px;
+    }
+    
+     ::placeholder,
+    select {
+        color: rgb(104, 104, 104);
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .responsive .parent {
+            display: flex;
+            flex-direction: column;
+        }
+        .responsive .parent .child:nth-child(2) {
+            margin-left: 0px;
+        }
+    }
+</style>
+
+<body>
+    <div class="vegetables">
+        <ul>
+            <li>Turnip</li>
+            <li>greens</li>
+            <li>yarrow</li>
+            <li>ricebean</li>
+            <li>rutabaga</li>
+            <li>endive</li>
+            <li>cauliflower</li>
+            <li>sea lettuce</li>
+            <li>kohlrabi</li>
+            <li>amaranth</li>
+        </ul>
+    </div>
+    <div class="css">
+        <h1>CSS is awesome</h1>
+    </div>
+    <div class="responsive">
+        <div class="parent">
+            <div class="child">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <a href="#">Excepteur</a> sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.
+                </p>
+                <p>
+                    <a href="#" title="">Building next level travel experiences</a>
+                </p>
+            </div>
+            <div class="child">
+                <p>
+                    <strong>Notes:</strong> <br />Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="form">
+        <div class="insideform">
+            <div class="title">
+                <p>EVENT REGISTRATION FORM</p>
+            </div>
+            <form action="">
+                <table class="forms">
+                    <tr>
+                        <td>
+                            <label for="">Name</label>
+                        </td>
+                        <td>
+                            <input type="text" name="" id="" placeholder="First Name" />
+                            <input type="text" name="" id="" placeholder="Last Name" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">Company</label>
+                        </td>
+                        <td>
+                            <input type="text" name="" id="companyInput" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">Email</label>
+                        </td>
+                        <td>
+                            <input type="text" name="" id="emailInput" placeholder="example@email.com" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">Phone</label>
+                        </td>
+                        <td>
+                            <input type="text" name="" id="area" placeholder="Area Code" />
+                            <input type="text" name="" id="phoneInput" placeholder="Phone Number" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="subject">Subject</label>
+                        </td>
+                        <td>
+                            <select name="subjects" id="">
+                  <option value="Choose Option">Choose Option</option>
+                  <option value="Choose Option">Choose Option</option>
+                  <option value="Choose Option">Choose Option</option>
+                  <option value="Choose Option">Choose Option</option>
+                  <option value="Choose Option">Choose Option</option>
+                </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="customer">
+                            <p>Are you an existing customer?</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="radio">
+                            <input type="radio" id="yes" name="group" />
+                            <label for=" html ">Yes</label>
+                            <input type="radio" id="no" name="group" />
+                            <label for="css ">No</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="submit" id="button">Register</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
